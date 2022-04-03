@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+
+{% load crispy_forms_tags %}
+
+{% comment %} <form action="" method="post" class="ui form" enctype="multipart/form-data" novalidate>     
+  {% csrf_token %} 
+     {{ form|crispy }}
+   <button type="submit" class="btn btn-primary">Confirm</button>
+ </form> {% endcomment %}
+
+{% block content %}
+
+
+{% endblock  %}
+{% block card %}
+<div class="container" align="center">
+<div class="card" style="width: 28rem;">
+  <div class="card-header">
+    Process Data
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Load CSV File</h5>
+    <p class="card-text">Load a file from local storage.</p>
+
+    <form  action="" method="POST" enctype="multipart/form-data">   
+      {% csrf_token %} 
+         {{ form|crispy }}
+       
+       <button type="submit" class="btn btn-primary">Confirm</button>
+     </form>
+   
+  </div>
+</div>
+</div>
+{% endblock %}
