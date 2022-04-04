@@ -9,8 +9,7 @@ Create a Django based API that uploads a CSV and retrieves the contents of the C
 Please ensure that the following apps are installed though not part of the original test would make running the applicaion easier
 1. ``` pip install django-filter ``` for filtering records in django rest. Please follow [installation instructions](https://django-filter.readthedocs.io/en/stable/guide/install.html)
 2. ``` pip install django_crispy_forms ```
-3. Most importantly ensure that the djangorestframework is installed `pip install djangorestframework` NB: I could have included all this in a  `requirements.txt` but I used a `conda environment` 
-4. on my machine hence the requirements file would've had too many contents that are not related to this assignment.
+3. Most importantly ensure that the djangorestframework is installed `pip install djangorestframework` NB: I could have included all this in a  `requirements.txt` but I used a `conda environment` on my machine hence the requirements file would've had too many contents that are not related to this assignment.
 `
 
 ## Access the software
@@ -37,7 +36,7 @@ The application should expose the two following endpoints:
 
 ## Additional tasks
 These are tasks that were not part of the test but I thought necessary to build to help me with my dev work
-1. Django management command for clearing the database
+1. Django management command for clearing the database `python manage.py clear_transactions`
 2. Basic frontend for running the code
 
 ## Scalability 
